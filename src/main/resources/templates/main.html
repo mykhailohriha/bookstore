@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+</head>
+<body>
+
+<div>Список книг</div>
+<form method = "post" action="filter">
+    <input type="text" name="filter">
+    <button type="submit">Найти по автору</button>
+</form>
+<div>
+    <form method="post" action="/all">
+        <input type="text" name="author" placeholder="Имя автора"/>
+        <input type="text" name="name" placeholder="Название книги"/>
+        <input type="text" name="price" placeholder="Цена"/>
+        <button type="submit">Добавить</button>
+    </form>
+</div>
+<table>
+    <thead>
+    <tr>
+        <th scope="col">№</th>
+        <th scope="col">Author</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+    </tr>
+    <tbody>
+    <tr th:each="book : ${books}">
+        <td th:text="${book.id}"></td>
+        <td th:text="${book.author}"></td>
+        <td th:text="${book.name}"></td>
+        <td th:text="${book.price}"></td>
+    </tr>
+    </tbody>
+    </thead>
+</table>
+
+</body>
+</html>
