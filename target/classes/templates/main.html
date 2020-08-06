@@ -5,20 +5,14 @@
     <title>Books</title>
 </head>
 <body>
+<a class="nav-link" href="/">Home</a>
 
-<div>Список книг</div>
 <form method = "post" action="filter">
     <input type="text" name="filter">
     <button type="submit">Найти по автору</button>
 </form>
-<div>
-    <form method="post" action="/all">
-        <input type="text" name="author" placeholder="Имя автора"/>
-        <input type="text" name="name" placeholder="Название книги"/>
-        <input type="text" name="price" placeholder="Цена"/>
-        <button type="submit">Добавить</button>
-    </form>
-</div>
+
+<div>Список книг</div>
 <table>
     <thead>
     <tr>
@@ -28,11 +22,16 @@
         <th scope="col">Price</th>
     </tr>
     <tbody>
-    <tr th:each="book : ${books}">
-        <td th:text="${book.id}"></td>
-        <td th:text="${book.author}"></td>
-        <td th:text="${book.name}"></td>
-        <td th:text="${book.price}"></td>
+    <tr th:each="b : ${books}">
+        <td th:text="${b.id}"></td>
+        <td th:text="${b.author}"></td>
+        <td th:text="${b.name}"></td>
+        <td th:text="${b.price}"></td>
+        <td>
+            <a th:href="@{'/delete?id=' + ${b.id}}">
+                <span>Delete</span>
+            </a>
+        </td>
     </tr>
     </tbody>
     </thead>
