@@ -3,8 +3,11 @@
 <head>
     <title>Greeting</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 </head>
 <body>
+<div th:insert="parts/menu :: nav"></div>
+
 <a class="nav-link" href="/add">Add book</a>
 <a class="nav-link" href="/all">List of books</a>
 <p th:text="'Hello, ' + ${name} + '!'" />

@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="064faa3d-0c63-4c3c-81da-d4e4f12aed25" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hriha/com/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/parts/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hriha/com/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hriha/com/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hriha/com/repos/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hriha/com/repos/BookRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hriha/com/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hriha/com/service/BookService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hriha/com/controller/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hriha/com/controller/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hriha/com/repos/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hriha/com/repos/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/greeting.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/greeting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,15 +53,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -89,9 +92,15 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mgrig\Desktop\bookstore\src\main\resources\templates\parts" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="ServingWebContentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -141,54 +150,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596631568933" />
-    <state x="723" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596624692128">
+    <state x="723" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596799992074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="723" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596624692128" />
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1596635953291">
+    <state x="723" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596799992074" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1596804488018">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596635953291" />
-    <state width="1877" height="147" key="GridCell.Tab.0.bottom" timestamp="1596796813068">
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596804488018" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596807252632">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596796813068" />
-    <state width="1877" height="147" key="GridCell.Tab.0.center" timestamp="1596796813067">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596807252632" />
+    <state width="1877" height="181" key="GridCell.Tab.0.bottom" timestamp="1596808293231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596796813067" />
-    <state width="1877" height="147" key="GridCell.Tab.0.left" timestamp="1596796813067">
+    <state width="1877" height="181" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596808293231" />
+    <state width="1877" height="181" key="GridCell.Tab.0.center" timestamp="1596808293231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596796813067" />
-    <state width="1877" height="147" key="GridCell.Tab.0.right" timestamp="1596796813067">
+    <state width="1877" height="181" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596808293231" />
+    <state width="1877" height="181" key="GridCell.Tab.0.left" timestamp="1596808293231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596796813067" />
-    <state width="1877" height="147" key="GridCell.Tab.1.bottom" timestamp="1596796813068">
+    <state width="1877" height="181" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596808293231" />
+    <state width="1877" height="181" key="GridCell.Tab.0.right" timestamp="1596808293231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596796813068" />
-    <state width="1877" height="147" key="GridCell.Tab.1.center" timestamp="1596796813068">
+    <state width="1877" height="181" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596808293231" />
+    <state width="1877" height="181" key="GridCell.Tab.1.bottom" timestamp="1596808293232">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596796813068" />
-    <state width="1877" height="147" key="GridCell.Tab.1.left" timestamp="1596796813068">
+    <state width="1877" height="181" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596808293232" />
+    <state width="1877" height="181" key="GridCell.Tab.1.center" timestamp="1596808293231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596796813068" />
-    <state width="1877" height="147" key="GridCell.Tab.1.right" timestamp="1596796813068">
+    <state width="1877" height="181" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596808293231" />
+    <state width="1877" height="181" key="GridCell.Tab.1.left" timestamp="1596808293231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="147" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596796813068" />
+    <state width="1877" height="181" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596808293231" />
+    <state width="1877" height="181" key="GridCell.Tab.1.right" timestamp="1596808293231">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="181" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596808293231" />
     <state x="759" y="242" key="RollbackChangesDialog" timestamp="1596794963473">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="759" y="242" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596794963473" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596707901053">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596799712737">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596707901053" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1596799712737" />
     <state x="690" y="275" key="extract.method.dialog" timestamp="1596637766835">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
