@@ -2,21 +2,22 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">
     <title>Books</title>
 </head>
 <body>
 <div th:insert="parts/menu :: nav"></div>
 
-<a class="nav-link" href="/">Home</a>
-
-<form method = "post" action="filter">
+<form method="post" action="filter">
     <input type="text" name="filter">
     <button type="submit">Найти по автору</button>
 </form>
 
 <div>Список книг</div>
-<table>
+
+<table class="table table-sm">
     <thead>
     <tr>
         <th scope="col">Author</th>
