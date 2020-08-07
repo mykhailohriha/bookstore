@@ -7,8 +7,26 @@
 </head>
 <body>
 <div th:fragment="nav">
-    <div th:insert="parts/common :: copy">
-    </div>
+    <div th:insert="parts/common :: copy"></div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+            <span class="navbar-brand mb-0 h1">Bookstore</span>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/all">List of book</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/add">Add new book</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
 </body>
 </html>
