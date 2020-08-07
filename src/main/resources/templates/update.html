@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Update book</title>
+</head>
+<body>
+<div>
+    <form method="post" action="/update">
+        <input type="text" name="id" th:value="${book.id}" hidden>
+        <input type="text" name="author" th:value="${book.author}" placeholder="Имя автора"/>
+        <input type="text" name="name" th:value="${book.name}" placeholder="Название книги"/>
+        <input type="text" name="price" th:value="${book.price}" placeholder="Цена"/>
+        <button type="submit">Update book</button>
+    </form>
+</div>
+</body>
+</html>

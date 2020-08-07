@@ -16,20 +16,25 @@
 <table>
     <thead>
     <tr>
-        <th scope="col">№</th>
         <th scope="col">Author</th>
         <th scope="col">Name</th>
         <th scope="col">Price</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
     </tr>
     <tbody>
     <tr th:each="b : ${books}">
-        <td th:text="${b.id}"></td>
         <td th:text="${b.author}"></td>
         <td th:text="${b.name}"></td>
         <td th:text="${b.price}"></td>
         <td>
             <a th:href="@{'/delete?id=' + ${b.id}}">
                 <span>Delete</span>
+            </a>
+        </td>
+        <td>
+            <a th:href="@{'/update?id=' + ${b.id}}">
+                <span>Update</span>
             </a>
         </td>
     </tr>
