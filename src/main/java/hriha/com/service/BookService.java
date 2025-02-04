@@ -18,7 +18,7 @@ public class BookService {
     }
 
     public void saveBook(String author, String name, int price) {
-        Book book = new Book(author,name,price);
+        Book book = new Book(author, name, price);
         bookRepository.save(book);
     }
 
@@ -34,5 +34,9 @@ public class BookService {
 
     public void deleteBook(Integer id) {
         bookRepository.deleteById(id);
+    }
+
+    public Book findBookById(Integer id) {
+        return bookRepository.findBookById(id);
     }
 }
