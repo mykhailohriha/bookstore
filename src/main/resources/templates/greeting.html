@@ -2,11 +2,17 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Greeting</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 </head>
 <body>
-<a class="nav-link" href="/add">Add book</a>
-<a class="nav-link" href="/all">List of books</a>
-<p th:text="'Hello, ' + ${name} + '!'" />
+<div th:insert="parts/menu :: nav"></div>
+
+
+<p><h5>Hello guest!</h5></p>
+<p><h5>Here you can see the books we have in stock</h5></p>
+
 </body>
 </html>

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Add book</title>
 </head>
 <body>
+<div th:insert="parts/menu :: nav"></div>
+
 <div>
     <form method="post" action="/add">
         <input type="text" name="author" required placeholder="Имя автора"/>
         <input type="text" name="name" required placeholder="Название книги"/>
         <input type="text" name="price" required placeholder="Цена"/>
-        <button type="submit">Добавить</button>
+        <button type="submit">Add book</button>
     </form>
 </div>
 </body>

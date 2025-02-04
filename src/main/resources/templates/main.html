@@ -2,34 +2,43 @@
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
     <title>Books</title>
 </head>
 <body>
-<a class="nav-link" href="/">Home</a>
+<div th:insert="parts/menu :: nav"></div>
 
-<form method = "post" action="filter">
+<form method="post" action="filter">
     <input type="text" name="filter">
     <button type="submit">Найти по автору</button>
 </form>
 
 <div>Список книг</div>
-<table>
+
+<table class="table table-sm">
     <thead>
     <tr>
-        <th scope="col">№</th>
         <th scope="col">Author</th>
         <th scope="col">Name</th>
         <th scope="col">Price</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
     </tr>
     <tbody>
     <tr th:each="b : ${books}">
-        <td th:text="${b.id}"></td>
         <td th:text="${b.author}"></td>
         <td th:text="${b.name}"></td>
         <td th:text="${b.price}"></td>
         <td>
             <a th:href="@{'/delete?id=' + ${b.id}}">
                 <span>Delete</span>
+            </a>
+        </td>
+        <td>
+            <a th:href="@{'/update?id=' + ${b.id}}">
+                <span>Update</span>
             </a>
         </td>
     </tr>
